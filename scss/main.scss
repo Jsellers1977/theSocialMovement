@@ -14,7 +14,7 @@ $header-text: #000;
   }
 }
 
-body {
+body, html {
   background: #bdbdbd;
   color: set-text-color($primary-color);
   font-family: "Quattrocento Sans";
