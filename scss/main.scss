@@ -1,0 +1,368 @@
+@import "./materialize";
+
+//header
+$header-bg: rgb(82, 68, 68);
+$header-height: 400px;
+$header-text: #000;
+
+// text function
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #fff;
+  } @else {
+    @return #000;
+  }
+}
+
+body {
+  background: #bdbdbd;
+  color: set-text-color($primary-color);
+  font-family: "Quattrocento Sans";
+  overflow-x: hidden;
+}
+
+.parallax {
+  position: fixed;
+}
+
+.section-dark-grey {
+  height: 300px;
+}
+
+.div2 {
+  margin-bottom: 40%;
+}
+.formbtn {
+  background: url(../img/gallery/cloud.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  min-height: 600px;
+  position: relative;
+}
+
+.abtext {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+.main-header {
+  background: $header-bg;
+  color: $secondary-color;
+  height: $header-height;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 30px;
+  border: #ff7500 solid 5px;
+  .brand-logo {
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: #ff7500;
+}
+
+footer {
+  border: #ff7500 solid 5px;
+}
+.page-footer {
+  background: $secondary-color;
+
+  .footer-copyright {
+    background: $secondary-color-light;
+    border: #ff7500 solid 5px;
+  }
+}
+
+.modal {
+  color: #333;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  opacity: 0;
+}
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.card-content {
+  color: $primary-color;
+}
+
+.page-footer {
+  background: $secondary-color;
+
+  .footer-copyright {
+    background: $secondary-color-light;
+  }
+}
+
+.section-social .fa-4x {
+  margin: 5px 10px;
+  color: #ff7500;
+}
+
+.ff {
+  color: #ff7500;
+}
+
+canvas {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  margin-top: -30px;
+}
+
+.section-canvas {
+  background-color: $secondary-color;
+}
+
+.btn1 {
+  margin: 150px 200px 100px 100px;
+}
+
+.v1 {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.section-contact {
+  position: relative;
+}
+
+.section-contact .card-panel {
+  position: relative;
+  z-index: 1;
+}
+
+#googlemap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+//compass
+.compass {
+  position: inherit;
+  display: block;
+  margin: auto;
+}
+.section-compass {
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+  min-height: 600px;
+  -webkit-background-image: linear-gradient(white, #f5f2d7);
+  -moz-background-image: linear-gradient(white, #f5f2d7);
+  -ms-background-image: linear-gradient(white, #f5f2d7);
+  -o-background-image: linear-gradient(white, #f5f2d7);
+  background-image: linear-gradient(white, #536dfe);
+  margin-bottom: 20px;
+}
+
+.f1 {
+  border: #ff7500 solid 5px;
+}
+
+.nav-footer {
+  position: relative;
+}
+
+.footnav {
+  background-color: transparent;
+}
+
+.brand-logo {
+  padding-top: 80px;
+}
+
+.nav1 {
+  padding-bottom: 30px;
+}
+
+//AJAX Form
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.section-why {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=)
+    #222;
+}
+
+#canvas {
+  height: 500px;
+}
+
+//dog
+.Container {
+  position: relative;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.Character {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border: 20px solid #eaeaea;
+  border-radius: 30px;
+  stroke: black;
+  stroke-width: 5;
+  stroke-linejoin: bevel;
+  background-image: url('data:image/svg+xml,%3Csvg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+  background-repeat: repeat;
+  background-size: auto;
+
+  .EarRight {
+    fill: #86411b;
+  }
+
+  .Head {
+    fill: #fde092;
+  }
+
+  .EarLeft {
+    fill: #ad542c;
+  }
+
+  .Mouth {
+    fill: gray;
+  }
+
+  .Nose {
+    fill: black;
+  }
+
+  .Body {
+    fill: beige;
+  }
+
+  .Foot {
+    fill: #e4ddc5;
+  }
+
+  .Tail {
+    fill: #b77856;
+  }
+
+  .HeadContainer {
+    transform: translate(50px, 0);
+  }
+
+  .FeetContainer {
+    transform: translate(-10px);
+  }
+
+  .Foot2 {
+    transform: translate(30px, 0);
+  }
+
+  .MouthMain {
+    transform: translate(40px, 0);
+  }
+}
+
+.Name {
+  font-size: 4rem;
+  font-family: "Pacifico", cursive;
+  fill: orange;
+  stroke: black;
+  stroke-width: 2;
+}
+
+//404
+
+.chead {
+  font-size: 20vh;
+  font-family: sans-serif;
+  position: relative;
+  background: #fff;
+  color: black;
+  border: $secondary-color solid 10px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 1em,
+        #9e2053 1em,
+        orange 50%
+      ),
+      repeating-linear-gradient(
+        45deg,
+        #111626,
+        #111626 1em,
+        pink 1em,
+        #571b3d 50%
+      );
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400% 0;
+  }
+}
